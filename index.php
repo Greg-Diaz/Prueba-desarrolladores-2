@@ -12,7 +12,7 @@
 
 
     <div class="container">
-            <center><h2>PRUEBA TECNICA DE DESARRROLLADORES 2</h2></center>
+            <center><h2>PRUEBA TECNICA DE DESARRROLLADORES 2 </h2></center>
 </div>
 
 <?php

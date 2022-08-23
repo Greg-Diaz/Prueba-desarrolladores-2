@@ -39,12 +39,12 @@ $rangos = new lrangos ();
 $lista= $rangos->getrangos();
 
 
-$nui = $_POST['rangoi'];
-   $rf = $_POST['rangof'];
+$nui = "1";
+   $rf = "50";
 
     $r = new rango($nui,$rf);
 
-    echo $r->cal_rango($_POST['rangoi'],$_POST['rangof']) ;
+    echo $r->cal_rango($nui,$rf) ;
     echo "<hr>"
 
     

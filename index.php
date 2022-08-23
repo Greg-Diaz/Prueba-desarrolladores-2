@@ -19,9 +19,9 @@
   <div class="mb-3">
   <form action="action.php" method="post">
   <label for="exampleFormControlInput1" class="form-label">Rango inicial</label>
-  <input type="number" class="form-control" nombre="rangoi" placeholder="inserte el rango inicial">
+  <input type="number" class="form-control" name="rangoi" placeholder="inserte el rango inicial">
   <label for="exampleFormControlInput1" class="form-label">Rango final</label>
-  <input type="number" class="form-control" nombre="rangof" placeholder="inserte el rango final">
+  <input type="number" class="form-control" name="rangof" placeholder="inserte el rango final">
 </div>
 <div class="mb-3">
 <button type="submit" class="btn btn-primary mb-3">Buscar numeros perfectos</button>

@@ -15,6 +15,20 @@
             <center><h2>PRUEBA TECNICA DE DESARRROLLADORES 2 </h2></center>
 </div>
 
+  
+  <div class="mb-3">
+  <form action="index.php" method="post">
+  <label for="exampleFormControlInput1" class="form-label">Rango inicial</label>
+  <input type="number" class="form-control" nombre="rangoi" placeholder="inserte el rango inicial">
+  <label for="exampleFormControlInput1" class="form-label">Rango final</label>
+  <input type="number" class="form-control" nombre="rangof" placeholder="inserte el rango final">
+</div>
+<div class="mb-3">
+<button type="submit" class="btn btn-primary mb-3">Buscar numeros perfectos</button>
+</div>
+
+
+  
 <?php
 
 require_once ("crango.php");
@@ -33,7 +47,16 @@ foreach ($lista as $ran)
          echo '<br>';
     }
 
+$nui = $_POST['rangoi'];
+   $rf = $_POST['rangof'];
 
+    $r = new rango($nui,$rf);
+
+    echo $r->cal_rango($r->get_nui(),$r->get_nf()) ;
+    echo "<hr>"
+
+    
+    
 ?>
 
 <H5>Jose Gregorio Diaz Torres</H5>

@@ -39,8 +39,8 @@ $rangos = new lrangos ();
 $lista= $rangos->getrangos();
 
 
-$nui = "1";
-   $rf = "50";
+$nui = $_REQUEST['rangoi'] ;
+   $rf = $_REQUEST['rangof'];
 
     $r = new rango($nui,$rf);
 

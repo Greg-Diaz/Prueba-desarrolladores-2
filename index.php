@@ -17,7 +17,7 @@
 
   
   <div class="mb-3">
-  <form action="index.php" method="post">
+  <form action="action.php" method="post">
   <label for="exampleFormControlInput1" class="form-label">Rango inicial</label>
   <input type="number" class="form-control" name="rangoi" placeholder="inserte el rango inicial">
   <label for="exampleFormControlInput1" class="form-label">Rango final</label>

@@ -18,6 +18,19 @@ $lista= $rangos->getrangos();
     
     echo $r->cal_rango($r->get_nui(),$r->get_nf()) ;
     echo "<hr>"
+        
+        $rangos = new lrangos ();
+
+$lista= $rangos->getrangos();
+
+foreach ($lista as $ran)
+
+
+    {
+
+        echo $ran->cal_rango($ran->get_nui(),$ran->get_nf()) ;
+         echo '<br>';
+    }
 
     
     

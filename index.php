@@ -17,7 +17,7 @@
 
   
   <div class="mb-3">
-  <form action="action.php" method="post">
+  <form action="index.php" method="post">
   <label for="exampleFormControlInput1" class="form-label">Rango inicial</label>
   <input type="number" class="form-control" name="rangoi" placeholder="inserte el rango inicial">
   <label for="exampleFormControlInput1" class="form-label">Rango final</label>
@@ -27,7 +27,34 @@
 <button type="submit" class="btn btn-primary mb-3">Buscar numeros perfectos</button>
 </div>
 
+require_once ("crango.php");
 
+
+$rangos = new lrangos ();
+
+$lista= $rangos->getrangos();
+
+foreach ($lista as $ran)
+
+
+    {
+
+        echo $ran->cal_rango($ran->get_nui(),$ran->get_nf()) ;
+         echo '<br>';
+    }
+
+
+    $nui = $_POST['rangoi'] ;
+    $rf = $_POST['rangof'];
+    
+
+    $r = new rango($nui,$rf);
+
+  
+    
+    echo $r->cal_rango($r->get_nui(),$r->get_nf()) ;
+    echo "<hr>"
+        
 
 
 <H5>Jose Gregorio Diaz Torres</H5>
